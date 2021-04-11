@@ -471,21 +471,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-04-11
+                    2021-04-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    557
+                    814
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    3 Min
                 </div>
                 
 
@@ -536,7 +536,7 @@
 <p>压缩后文件格式：.tar.gz</p>
 <p>范例：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">tar</span> -zcvf dir1.tar.gz dir1
-将目录dir压缩成一个打包并压缩的文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<span class="token comment">#将目录dir压缩成一个打包并压缩的文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>ter命令解压缩语法：</p>
 <p>-x 解包.tar文件</p>
@@ -556,9 +556,9 @@
 <p>压缩后文件格式：zip</p>
 <p>范例：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">zip</span> services.zip /etc/services
-压缩文件
+<span class="token comment">#压缩文件</span>
 $ <span class="token function">zip</span> -r test.zip /test
-压缩目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment">#压缩目录</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="压缩解压命令：unzip"><a href="#压缩解压命令：unzip" class="headerlink" title="压缩解压命令：unzip"></a>压缩解压命令：unzip</h3><p>命令名称：unzip</p>
 <p>命令所在路径：/usr/bin/unzip</p>
@@ -586,6 +586,41 @@ $ <span class="token function">zip</span> -r test.zip /test
 <p>功能描述：解压缩</p>
 <p>范例：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ bunzip2 -k file1.bz2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="网络通信命令"><a href="#网络通信命令" class="headerlink" title="网络通信命令"></a>网络通信命令</h2><h3 id="网络通信命令：write"><a href="#网络通信命令：write" class="headerlink" title="网络通信命令：write"></a>网络通信命令：write</h3><p>指令名称：write</p>
+<p>指令所在路径：/usr/bin/write</p>
+<p>执行权限：所有用户</p>
+<p>语法：write [用户名]</p>
+<p>功能描述：向另外一个用户发信息，以Ctrl+D作为结束</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">write</span> samlee<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="网络通信命令：wall"><a href="#网络通信命令：wall" class="headerlink" title="网络通信命令：wall"></a>网络通信命令：wall</h3><p>指令名称：wall</p>
+<p>命令英文原意：write all</p>
+<p>指令所在路径：/usr/bin/wall</p>
+<p>执行权限：所有用户</p>
+<p>语法：wall [message] [文件名]</p>
+<p>功能描述：向所有用户广播信息</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ wall Happy New Year<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="网络通信命令：ping"><a href="#网络通信命令：ping" class="headerlink" title="网络通信命令：ping"></a>网络通信命令：ping</h3><p>命令名称：ping</p>
+<p>命令所在路径：/bin/ping</p>
+<p>执行权限：所有用户</p>
+<p>语法：ping 选项 IP地址</p>
+<p>-c 指定发送次数</p>
+<p>-s 指定数据包大小</p>
+<p>功能描述：测试网络连通性</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">ping</span> <span class="token number">192.168</span>.17.25<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="网络通信命令：ifconfig"><a href="#网络通信命令：ifconfig" class="headerlink" title="网络通信命令：ifconfig"></a>网络通信命令：ifconfig</h3><p>命令英文原意：interface configure</p>
+<p>命令所在路径：/sbin/ifconfig</p>
+<p>执行权限：root</p>
+<p>语法：ifconfig 网卡名称 IP地址</p>
+<p>功能描述：查看和设置网卡信息</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">ifconfig</span> eth0 <span class="token number">192.168</span>.8.250<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -1017,7 +1052,7 @@ $ <span class="token function">zip</span> -r test.zip /test
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">10.1k</span>&nbsp;字
+                class="white-color">10.4k</span>&nbsp;字
             
             
             
