@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="linux常用文件处理命令, JiTang&#39;s Home">
+    <meta name="keywords" content="linux常用压缩解压命令和常用网络通信命令, JiTang&#39;s Home">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>linux常用文件处理命令 | JiTang&#39;s Home</title>
+    <title>linux常用压缩解压命令和常用网络通信命令 | JiTang&#39;s Home</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">linux常用文件处理命令</h1>
+                    <h1 class="description center-align post-title">linux常用压缩解压命令和常用网络通信命令</h1>
                 </div>
             </div>
         </div>
@@ -464,28 +464,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-04-07
+                    2021-04-11
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-04-09
+                    2021-04-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    905
+                    562
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    3 Min
+                    2 Min
                 </div>
                 
 
@@ -508,51 +508,84 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h3><p>命令格式： 命令 -选项 参数 <br/><br>例： ls -la /etc <br/><br>说明 <br/><br>1）个别命令使用不遵循此格式 <br/><br>2）当有多个选项时，可以写在一起<br/><br>3）两个特殊的目录.和..，分别代表前目录和当前目录的父目录<br/></p>
-<h3 id="文件处理命令：ls"><a href="#文件处理命令：ls" class="headerlink" title="文件处理命令：ls"></a>文件处理命令：ls</h3><p>命令名称：ls <br/><br>命令英文原意：list <br/><br>命令所在路径：/bin/ls <br/><br>执行权限：所有用户 <br/><br>功能描述：显示目录文件 <br/><br>语法：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> 选项<span class="token punctuation">[</span>-ald<span class="token punctuation">]</span> <span class="token punctuation">[</span>文件或目录<span class="token punctuation">]</span> 
--a 显示所有文件，包括隐藏文件 
--l 详细信息显示 
--d 查看目录属性 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="文件处理命令：cd"><a href="#文件处理命令：cd" class="headerlink" title="文件处理命令：cd"></a>文件处理命令：cd</h3><p>命令名称：cd <br/><br>命令英文原意：change directory <br/><br>命令所在路径：shell内置命令<br/><br>执行权限：所有用户<br/><br>语法：cd[目录]<br/><br>功能描述：切换目录<br/><br>范例：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token builtin class-name">cd</span> / 切换到根目录
-$ <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>  回到上级目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="文件处理命令：pwd"><a href="#文件处理命令：pwd" class="headerlink" title="文件处理命令：pwd"></a>文件处理命令：pwd</h3><p>命令名称：pwd <br/><br>命令英文原意：print working directory <br/><br>命令所在路径：/bin/pwd <br/><br>执行权限：所有用户 <br/><br>语法：<br>pwd <br/><br>功能描述：显示当前所在的工作目录<br/><br>范例：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token builtin class-name">pwd</span>
-/etc/rc.d/init.d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="文件处理命令：mkdir"><a href="#文件处理命令：mkdir" class="headerlink" title="文件处理命令：mkdir"></a>文件处理命令：mkdir</h3><p>命令名称：mldir<br/><br>命令英文原意：make directories <br/><br>命令所在路径：/bin/mkdir <br/><br>执行权限：所有用户 <br/><br>语法：mkdir -p [目录名] <br/><br>功能描述：创建新目录<br/><br>-p 递归创建 <br/><br>范例：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">mkdir</span> newdir<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h2 id="压缩解压命令"><a href="#压缩解压命令" class="headerlink" title="压缩解压命令"></a>压缩解压命令</h2><h3 id="解压缩命令：压缩解压命令：gzip"><a href="#解压缩命令：压缩解压命令：gzip" class="headerlink" title="解压缩命令：压缩解压命令：gzip"></a>解压缩命令：压缩解压命令：gzip</h3><p>命令名称：gzip</p>
+<p>命令英文原意：GNU zip</p>
+<p>命令所在路径：/bin/gzip</p>
+<p>执行权限：所有用户</p>
+<p>语法：gzip [文件]</p>
+<p>功能描述：压缩文件</p>
+<p>压缩后文件格式：.gz</p>
+<h3 id="压缩解压命令：gunzip"><a href="#压缩解压命令：gunzip" class="headerlink" title="压缩解压命令：gunzip"></a>压缩解压命令：gunzip</h3><p>命令名称：gunzip</p>
+<p>命令英文原意：GNU unzip</p>
+<p>命令所在路径：/bin/gunzip</p>
+<p>执行权限：所有用户</p>
+<p>语法：gunzip [压缩文件]</p>
+<p>功能描述：解压缩.gz的压缩文件</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ gunzip file1.gz<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="文件处理命令：touch"><a href="#文件处理命令：touch" class="headerlink" title="文件处理命令：touch"></a>文件处理命令：touch</h3><p>命令名称：touch <br/><br>命令所在路径：/bin/touch <br/><br>执行权限：所有用户 <br/><br>语法：touch [文件名] <br/><br>功能描述：创建空文件 <br/><br>范例：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">touch</span> newfile<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="解压缩命令：tar"><a href="#解压缩命令：tar" class="headerlink" title="解压缩命令：tar"></a>解压缩命令：tar</h3><p>命令名称：tar</p>
+<p>命令所在路径：/bin/tar</p>
+<p>执行权限：所有用户</p>
+<p>语法：tar 选项 [-zcvf] [压缩后文件的名称] [目录]</p>
+<p>-c 产生.tar打包文件</p>
+<p>-v 显示详细信息</p>
+<p>-f 指定压缩后的文件名</p>
+<p>-z 打包同时压缩</p>
+<p>功能描述：打包目录</p>
+<p>压缩后文件格式：.tar.gz</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">tar</span> -zcvf dir1.tar.gz dir1
+将目录dir压缩成一个打包并压缩的文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h3 id="文件处理命令：cp"><a href="#文件处理命令：cp" class="headerlink" title="文件处理命令：cp"></a>文件处理命令：cp</h3><p>命令名称：cp<br/><br>命令英文原意：copy <br/><br>命令所在路径：/bin/cp <br/><br>执行权限：所有用户 <br/><br>语法：cp -rp [源文件或目录] [目的目录] <br/><br>-r 复制目录 <br/><br>-p 保留文件属性<br/><br>功能描述：复制文件或目录<br/><br>范例：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">cp</span> file1 file2 dir1
-将文件file1、file2复制到目录dir1
-$ <span class="token function">cp</span> -rp dir1 dir2
-将dir1下所有文件及子目录复制到dir2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>ter命令解压缩语法：</p>
+<p>-x 解包.tar文件</p>
+<p>-v 显示详细信息</p>
+<p>-f 指定解压文件</p>
+<p>-z 解压缩</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">tar</span> -zxvf dir1.tar.gz<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="文件处理命令：mv"><a href="#文件处理命令：mv" class="headerlink" title="文件处理命令：mv"></a>文件处理命令：mv</h3><p>命令名称：mv <br/><br>命令英文原意：move <br/><br>命令所在路径：/bin/mv <br/><br>执行权限：所有用户 <br/><br>语法：mv [源文件或目录] [目的目录] <br/><br>功能描述：移动文件、更名 <br/><br>范例：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">mv</span> file1 file3
-将当前目录下文件file1更名为file3
-$ <span class="token function">mv</span> file2 /temp/testfile
-将文件file2移动到目录/temp下同时改名为testfile<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="文件处理命令：rm"><a href="#文件处理命令：rm" class="headerlink" title="文件处理命令：rm"></a>文件处理命令：rm</h3><p>命令名称：rm <br/><br>命令英文原意：remove <br/><br>命令所在路径：/bin/rm <br/><br>执行权限：所有用户 <br/><br>语法：rm -rf [文件或目录]<br>-r 删除目录 <br/><br>-f 强行覆盖 <br/><br>功能描述：删除文件 <br/><br>范例：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">rm</span> file3
-删除文件file3
-$ <span class="token function">rm</span> -rf dir1
-删除目录dir1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="文件处理命令：cat"><a href="#文件处理命令：cat" class="headerlink" title="文件处理命令：cat"></a>文件处理命令：cat</h3><p>命令名称：cat <br/><br>命令英文原意：concatenate and display files <br/><br>命令所在路径：/bin/cat <br/><br>执行权限：所有用户 <br/><br>语法：cat[文件名] <br/><br>功能描述：显示文件内容 <br/><br>范例：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">cat</span> /etc/issue
-$ <span class="token function">cat</span> /etc/services<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="文件处理命令：more"><a href="#文件处理命令：more" class="headerlink" title="文件处理命令：more"></a>文件处理命令：more</h3><p>命令名称：more <br/><br>命令所在路径：/bin/more <br/><br>执行权限：所有用户 <br/><br>语法：more [文件名] <br/><br>（空格）或f  显示下一页 <br/><br>（Enter）   显示下一行 <br/><br>q或Q   退出 <br/><br>功能描述：分页显示文件内容 <br/><br>范例：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">more</span> /etc/services<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="文件处理命令：ln"><a href="#文件处理命令：ln" class="headerlink" title="文件处理命令：ln"></a>文件处理命令：ln</h3><p>命令名称：ln<br/><br>命令英文原意：link <br/><br>命令所在路径：/bin/ln <br/><br>执行权限：所有用户 <br/><br>语法：ln -s [源文件] [目标文件] <br/><br>-s 创建软链接 <br/><br>功能描述：产生链接文件 <br/><br>范例：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">ln</span> -s /etc/issue /issue.soft
-创建文件/etc/issue的软链接/issue.soft
-$ <span class="token function">ln</span> /etc/issue /issue.hard
-创建文件/etc/issue的硬链接/issue.hard<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="压缩解压命令：zip"><a href="#压缩解压命令：zip" class="headerlink" title="压缩解压命令：zip"></a>压缩解压命令：zip</h3><p>命令名称：zip</p>
+<p>命令所在路径：/usr/bin/zip</p>
+<p>执行权限：所有用户</p>
+<p>语法：</p>
+<p>zip 选项 [-r] [压缩后文件名称] [文件或目录]</p>
+<p>-r 压缩目录</p>
+<p>功能描述：压缩文件或目录</p>
+<p>压缩后文件格式：zip</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">zip</span> services.zip /etc/services
+压缩文件
+$ <span class="token function">zip</span> -r test.zip /test
+压缩目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h3 id="压缩解压命令：unzip"><a href="#压缩解压命令：unzip" class="headerlink" title="压缩解压命令：unzip"></a>压缩解压命令：unzip</h3><p>命令名称：unzip</p>
+<p>命令所在路径：/usr/bin/unzip</p>
+<p>执行权限：所有用户</p>
+<p>语法：unzip [压缩文件]</p>
+<p>功能描述：解压.zip的压缩文件</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">unzip</span> test.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="压缩解压命令：zxip2"><a href="#压缩解压命令：zxip2" class="headerlink" title="压缩解压命令：zxip2"></a>压缩解压命令：zxip2</h3><p>命令名称：bzip2</p>
+<p>命令所在路径：/usr/bin/bzip2</p>
+<p>执行权限；所有用户</p>
+<p>语法：bzip2 选项 [-k] [文件]</p>
+<p>-k 产生压缩文件后保留原文件</p>
+<p>功能描述：压缩文件</p>
+<p>压缩后文件格式：.bz2</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">bzip2</span> -k file1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="压缩解压命令：bunzip2"><a href="#压缩解压命令：bunzip2" class="headerlink" title="压缩解压命令：bunzip2"></a>压缩解压命令：bunzip2</h3><p>命令名称：bunzip2</p>
+<p>命令所在路径：/usr/bin.bunzip2</p>
+<p>执行权限：所有用户</p>
+<p>语法：bunzip2 选项 [-k] [压缩文件]</p>
+<p>-k 解压缩后保留原文件</p>
+<p>功能描述：解压缩</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ bunzip2 -k file1.bz2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -578,7 +611,7 @@ $ <span class="token function">ln</span> /etc/issue /issue.hard
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/04/07/linux%E5%B8%B8%E7%94%A8%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/">http://example.com/2021/04/07/linux%E5%B8%B8%E7%94%A8%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/</a>
+                    <a href="http://example.com/2021/04/11/linu%E5%B8%B8%E7%94%A8%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4/">http://example.com/2021/04/11/linu%E5%B8%B8%E7%94%A8%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -670,7 +703,7 @@ $ <span class="token function">ln</span> /etc/issue /issue.hard
         repo: '',
         owner: '',
         admin: null,
-        id: '2021-04-07T00-00-00',
+        id: '2021-04-11T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -698,17 +731,18 @@ $ <span class="token function">ln</span> /etc/issue /issue.hard
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/04/08/linux%E5%B8%B8%E7%94%A8%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4/">
+                <a href="/2021/04/11/linu%E5%B8%B8%E7%94%A8%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="linux常用权限管理命令">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="linux常用压缩解压命令和常用网络通信命令">
                         
-                        <span class="card-title">linux常用权限管理命令</span>
+                        <span class="card-title">linux常用压缩解压命令和常用网络通信命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -718,9 +752,9 @@ $ <span class="token function">ln</span> /etc/issue /issue.hard
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -733,6 +767,7 @@ $ <span class="token function">ln</span> /etc/issue /issue.hard
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -759,13 +794,13 @@ $ <span class="token function">ln</span> /etc/issue /issue.hard
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/07/the%20Study%20Diary%20of%20Jitang/">
+                <a href="/2021/04/11/%E5%9C%A8macOS%E4%B8%8B%E9%85%8D%E7%BD%AE%E6%B1%87%E7%BC%96%E7%8E%AF%E5%A2%83/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="the Study Diary of Jitang vol.1">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="在macOS下配置汇编环境">
                         
-                        <span class="card-title">the Study Diary of Jitang vol.1</span>
+                        <span class="card-title">在macOS下配置汇编环境</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -776,14 +811,14 @@ $ <span class="token function">ln</span> /etc/issue /issue.hard
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/diary/" class="post-category">
-                                    diary
+                            <a href="/categories/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" class="post-category">
+                                    汇编语言
                                 </a>
                             
                             
@@ -797,8 +832,8 @@ $ <span class="token function">ln</span> /etc/issue /issue.hard
                         <span class="chip bg-color">study</span>
                     </a>
                     
-                    <a href="/tags/diary/">
-                        <span class="chip bg-color">diary</span>
+                    <a href="/tags/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/">
+                        <span class="chip bg-color">汇编语言</span>
                     </a>
                     
                 </div>
