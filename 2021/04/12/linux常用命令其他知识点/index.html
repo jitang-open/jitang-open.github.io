@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JiTang&#39;s Home">
+    <meta name="keywords" content="linux常用命令其他知识点, JiTang&#39;s Home">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JiTang&#39;s Home</title>
+    <title>linux常用命令其他知识点 | JiTang&#39;s Home</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">linux常用命令其他知识点</h1>
                 </div>
             </div>
         </div>
@@ -429,12 +429,33 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
+                            </a>
+                        
+                            <a href="/tags/study/">
+                                <span class="chip bg-color">study</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%91%BD%E4%BB%A4/">
+                                <span class="chip bg-color">命令</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/linux/" class="post-category">
+                                linux
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -457,14 +478,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    0
+                    771
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    2 Min
                 </div>
                 
 
@@ -487,7 +508,85 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h3 id="系统关机命令：shutdown"><a href="#系统关机命令：shutdown" class="headerlink" title="系统关机命令：shutdown"></a>系统关机命令：shutdown</h3><p>命令名称：shutdown</p>
+<p>命令所在路径：/sbin/shutdown</p>
+<p>执行权限：root</p>
+<p>语法：shutdown</p>
+<p>功功能描述：关机</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">shutdown</span> -h now<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="系统关机命令：reboot"><a href="#系统关机命令：reboot" class="headerlink" title="系统关机命令：reboot"></a>系统关机命令：reboot</h3><p>命令名称：reboot</p>
+<p>命令执行所在路径：/sbin/reboot</p>
+<p>执行权限：root</p>
+<p>语法：reboot</p>
+<p>功能描述：重启系统</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">reboot</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="shell应用技巧"><a href="#shell应用技巧" class="headerlink" title="shell应用技巧"></a>shell应用技巧</h2><p>命令别名</p>
+<p>输入/输出重定向</p>
+<p>管道</p>
+<p>命令连接符</p>
+<p>命令替换符</p>
+<h3 id="bash应用技巧"><a href="#bash应用技巧" class="headerlink" title="bash应用技巧"></a>bash应用技巧</h3><p>命令补齐</p>
+<blockquote>
+<p>命令补齐允许用户输入文件名起始的若干个字母后，按<tab>键补齐文件名，同样可对命令补全。</p>
+</blockquote>
+<p>命令历史</p>
+<blockquote>
+<p>命令历史允许用户浏览先前输入的命令并重新调用他们，用history命令可以显示命令列表，按方向键↑和↓可查找以前执行过的命令。</p>
+</blockquote>
+<h3 id="命令别名"><a href="#命令别名" class="headerlink" title="命令别名"></a>命令别名</h3><p>命令别名定义：<br>范例：</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">alias copy&#x3D;cp
+alias dirrm&#x3D;&quot;rm -rf&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>查看别名信息：alias</p>
+<p>删除别名：unalias copy</p>
+<h3 id="输入-输出重定向"><a href="#输入-输出重定向" class="headerlink" title="输入/输出重定向"></a>输入/输出重定向</h3><blockquote>
+<p>同I/O标准一样，shell对于每一个进程预先定义3个文件描述字（0、1、2）。分别对应于： <br/><br>0 (STDIN)标准输入 <br/><br>1 (STDOUT)标准输出 <br/><br>2 (SYDERR)标准错误输出。</p>
+</blockquote>
+<p>&gt;或&gt;&gt; 输出重定向</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">find</span> /etc -name *.conf <span class="token operator">></span> /test/conf.find
+<span class="token function">date</span> <span class="token operator">>></span> /test /test/conf.find<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>&lt; 输入重定向</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">wall <span class="token operator">&lt;</span> /etc/issue.net<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>2&gt;或2&gt;&gt; 错误输出重定向</p>
+<p>范例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> -rp /usr/backup/usr.bak <span class="token operator"><span class="token file-descriptor important">2</span>>></span> /bak.error<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>&amp;&gt;输出与错误输出重定向</p>
+<h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><p>管道：将一个命令的输出传送给另一个命令，作为另一个命令的输入</p>
+<p>使用方法：命令1|命令2|命令3……|命令n</p>
+<p>范例;</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> -l /etc <span class="token operator">|</span> <span class="token function">grep</span> init
+<span class="token function">ls</span> -l /etc <span class="token operator">|</span> <span class="token function">grep</span> <span class="token operator">|</span> <span class="token function">wc</span> -l
+<span class="token function">grep</span> -v <span class="token string">"#"</span> /etc/samba/smb.conf <span class="token operator">|</span> <span class="token function">grep</span> -v <span class="token string">";"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="命令连接符"><a href="#命令连接符" class="headerlink" title="命令连接符"></a>命令连接符</h3><p>；</p>
+<p>命令执行顺序。</p>
+<p>&amp;&amp;</p>
+<p>前后命令的执行存在逻辑与关系，只有&amp;&amp;前面的命令执行成功之后，它后面的命令才被执行。</p>
+<p>()</p>
+<p>改变命令执行顺序</p>
+<h3 id="命令替换符"><a href="#命令替换符" class="headerlink" title="命令替换符"></a>命令替换符</h3><p>命令替换：将一个命令的输出作为另一个命令的参数。</p>
+<p>格式为：命令1 <code>命令2</code></p>
+<p>范例:</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> -l <span class="token variable"><span class="token variable">`</span><span class="token function">which</span> <span class="token function">touch</span><span class="token variable">`</span></span>
+<span class="token function">cp</span> <span class="token variable"><span class="token variable">`</span><span class="token function">find</span> /etc -name *.conf -o -name *tab<span class="token variable">`</span></span> /bakup<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="知识点总结"><a href="#知识点总结" class="headerlink" title="知识点总结"></a>知识点总结</h3><h4 id="Linux文件命名规则"><a href="#Linux文件命名规则" class="headerlink" title="Linux文件命名规则"></a>Linux文件命名规则</h4><h4 id="文件处理命令"><a href="#文件处理命令" class="headerlink" title="文件处理命令"></a>文件处理命令</h4><p>Linux权限；i节点；软硬链接的区别及特点；对文件的创建、删除、拷贝、剪切、查看</p>
+<h4 id="权限管理命令"><a href="#权限管理命令" class="headerlink" title="权限管理命令"></a>权限管理命令</h4><p>文件和目录的rwx权限的含义；修改权限；修改文件所有者、所属组；默认权限查看及设置</p>
+<h4 id="文件搜索命令"><a href="#文件搜索命令" class="headerlink" title="文件搜索命令"></a>文件搜索命令</h4><p>查看命令路径、find用法及实例、文件内容查找</p>
+<h4 id="帮助命令"><a href="#帮助命令" class="headerlink" title="帮助命令"></a>帮助命令</h4><p>查看命令和配置文件的帮助、Shell内置命令帮助</p>
+<h4 id="压缩解压命令"><a href="#压缩解压命令" class="headerlink" title="压缩解压命令"></a>压缩解压命令</h4><p>.gz、.tar、.zip、压缩命令的特点</p>
+<h4 id="网络通信命令"><a href="#网络通信命令" class="headerlink" title="网络通信命令"></a>网络通信命令</h4><p>ping的用法、ifconfig、用户通信</p>
+<h4 id="关机重启命令"><a href="#关机重启命令" class="headerlink" title="关机重启命令"></a>关机重启命令</h4><h4 id="Shell应用技巧"><a href="#Shell应用技巧" class="headerlink" title="Shell应用技巧"></a>Shell应用技巧</h4><p>命令补齐、历史记录、快捷键、命令别名、输入输出重定向、管道、命令连接符、命令替换符、转义符。</p>
+
                 
             </div>
             <hr/>
@@ -550,7 +649,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
+                                </a>
+                            
+                                <a href="/tags/study/">
+                                    <span class="chip bg-color">study</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%91%BD%E4%BB%A4/">
+                                    <span class="chip bg-color">命令</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -593,7 +704,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2021-04-12T19-37-03',
+        id: '2021-04-12T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -630,9 +741,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="linux常用命令其他知识点">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">linux常用命令其他知识点</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -647,13 +758,33 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            JiTang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                    <a href="/tags/study/">
+                        <span class="chip bg-color">study</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%91%BD%E4%BB%A4/">
+                        <span class="chip bg-color">命令</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -893,7 +1024,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">10.4k</span>&nbsp;字
+                class="white-color">11.2k</span>&nbsp;字
             
             
             
